@@ -1,6 +1,7 @@
 package com.gouv.gouvelection.controller;
 
 import com.gouv.gouvelection.dto.ElectorDto;
+import com.gouv.gouvelection.dto.ElectorResponseDto;
 import com.gouv.gouvelection.service.ElectorServiceInterface;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,7 +15,7 @@ public class ElectorController {
     }
 
     @PostMapping("/elector")
-    public Boolean findElectorByNationalIdAndEmail(@RequestBody ElectorDto electorDto) {
+    public ElectorResponseDto findElectorByNationalIdAndEmail(@RequestBody ElectorDto electorDto) {
         return this.electorService.findElectorByNationalIdAndEmail(electorDto);
     }
 }
