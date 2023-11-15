@@ -12,4 +12,16 @@ public class ElectorResponseDto {
         this.lastName = elector.getLastName();
         this.nationalId = elector.getNationalId();
     }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getNationalId() {
+        return nationalId;
+    }
 }
