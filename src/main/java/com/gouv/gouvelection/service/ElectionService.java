@@ -2,6 +2,7 @@ package com.gouv.gouvelection.service;
 
 import com.gouv.gouvelection.dto.ElectionDto;
 import com.gouv.gouvelection.entity.Election;
+import com.gouv.gouvelection.entity.Scrutin;
 import com.gouv.gouvelection.repository.ElectionRepositoryInterface;
 import org.springframework.stereotype.Service;
 
